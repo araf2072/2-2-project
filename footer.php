@@ -1,37 +1,33 @@
-<section class="footer">
+</div>
+<!--scroll to top-->
+<a href="#" class="scroll-to-top"><i class="fa fa-angle-double-up"></i></a>
+</div>
+</div>
+<!--BASIC scripts-->
+<!-- ========================================================= -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../assets/vendor/jquery/jquery-1.12.3.min.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/nano-scroller/nano-scroller.js"></script>
+<!--TEMPLATE scripts-->
+<!-- ========================================================= -->
+<script src="../assets/javascripts/template-script.min.js"></script>
+<script src="../assets/javascripts/template-init.min.js"></script>
+<!-- SECTION script and examples-->
+<!-- ========================================================= -->
+<!--Notification msj-->
+<script src="../assets/vendor/toastr/toastr.min.js"></script>
+<!--morris chart-->
+<script src="../assets/vendor/chart-js/chart.min.js"></script>
+<!--Gallery with Magnific popup-->
+<script src="../assets/endor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="../assets/vendor/data-table/media/js/jquery.dataTables.min.js"></script>
+<script src="../assets/vendor/data-table/media/js/dataTables.bootstrap.min.js"></script>
+<!--Examples-->
+<script src="../assets/javascripts/examples/tables/data-tables.js"></script>
+<!--Examples-->
+<script src="../assets/javascripts/examples/dashboard.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
 
-   <div class="box-container">
-
-      <div class="box">
-         <h3>quick links</h3>
-         <a href="index.php">home</a>
-         <a href="about.php">about</a>
-         <a href="log.php">login</a>
-      </div>
-
-      <div class="box">
-         <h3>extra links</h3>
-         <a href="juniv.edu/">JU</a>
-         <a href="juniv-admission.org/">For Admission</a>
-         <a href="contact.php">contact</a>
-      </div>
-
-      <div class="box">
-         <h3>contact info</h3>
-         <p> <i class="fas fa-phone"></i> 0177-777-9999 </p>
-         <p> <i class="fas fa-phone"></i> 0166-222-3333 </p>
-         <p> <i class="fas fa-envelope"></i> juniv@gmail.com </p>
-         <p> <i class="fas fa-map-marker-alt"></i> Jahangirnagar University,Savar,Bangladesh </p>
-      </div>
-
-      <div class="box">
-         <h3>follow us</h3>
-         <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
-         <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
-         <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-         <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
-      </div>
-
-   </div>
-
-</section>
+</html>

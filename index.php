@@ -1,65 +1,125 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>home</title>
+<?php 
+require_once 'header.php'; 
+?>
+<div class="content-header">
+    <!-- leftside content header -->
+    <div class="leftside-content-header">
+        <ul class="breadcrumbs">
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="#">Dashboard</a></li>
+        </ul>
+    </div>
+</div>    
+<div class="row animated fadeInUp">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel widgetbox wbox-2 bg-darker-2 color-light" style="background:red">
+            <a href="requestbook.php">
+                <div class="panel-content">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span class="icon fa fa-book color-lighter-1"></span>
+                        </div>
 
-   <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                        <?php
+                        $sql = "SELECT * FROM `request_book`";
+                        $res = mysqli_query($con,$sql);
+                        $total_req = mysqli_num_rows($res);
+                        ?>
+                        <div class="col-xs-8">
+                            <h4 class="subtitle color-lighter-1">Request Books</h4>
+                            <h1 class="title color-light"><b><?= $total_req?></b></h1>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel widgetbox wbox-2 bg-darker-2 color-light" style="background:red">
+            <a href="students.php">
+                <div class="panel-content">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span class="icon fa fa-users color-lighter-1"></span>
+                        </div>
+                        <?php
+    $sql = "SELECT * FROM `students`";
+                                $res = mysqli_query($con,$sql);
+                                $total_students = mysqli_num_rows($res);
+                        ?>
+                        <div class="col-xs-8">
+                            <h4 class="subtitle color-lighter-1">Total Student</h4>
+                            <h1 class="title color-light"><b><?= $total_students?></b></h1>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel widgetbox wbox-2 bg-darker-2 color-light" style="background:red">
+            <a href="managebook.php">
+                <div class="panel-content">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <span class="icon fa fa-book color-lighter-1"></span>
+                        </div>
+                        <?php
+    $sql = "SELECT * FROM `books`";
+                                $res = mysqli_query($con,$sql);
+                                $total_books = mysqli_num_rows($res);
+                        ?>
+                        <div class="col-xs-8">
+                            <h4 class="subtitle color-lighter-1">Total Books</h4>
+                            <h1 class="title color-light"><?= $total_books?></h1>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div> 
+     <div class="col-sm-6 col-md-4 col-lg-3">
+    <div class="panel widgetbox wbox-2 bg-darker-2 color-light" style="background:red">
+        <a href="index.php">
+            <div class="panel-content">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <span class="icon fa fa-book color-lighter-1"></span>
+                    </div>
+                    <?php
+                                $sql = "SELECT SUM(`book_quantity`)as total_quantity_book FROM books";
+                                $res = mysqli_query($con,$sql);
+                                $total_quan_book = mysqli_fetch_assoc($res);
+                                $sql = "SELECT SUM(`book_avilable`)as total_avilable_book FROM books ";
+                                $res = mysqli_query($con,$sql);
+                                $total_avilable_book = mysqli_fetch_assoc($res);
+                    ?>
+                    <div class="col-xs-8">
+                        <h4 class="subtitle color-lighter-1">Quantity and Avilable</h4>
+                        <h6 class="title color-light"><?=$total_quan_book['total_quantity_book'].' - ' .$total_avilable_book['total_avilable_book']  ?></h6>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    </div>
+    <div class="row mt-5" >
+        <div class="col-sm-6 col-md-4">
+            <div class="panel">
+                <img src="../images/libraian/chat1.png" alt="" style="width:100%">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="panel">
+                <img src="../images/libraian/chat2.png" alt="" style="width:100%">
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="panel">
+                <img src="../images/libraian/chat3.png" alt="" style="width:100%">
+            </div>
+        </div>
+    </div>
+</div>
+<?php require_once 'footer.php' ?>
 
-   <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
-
-</head>
-<body>
-<?php include 'header.php'; ?>
-
-<section class="home">
-
-   <div class="content">
-      <h3>Welcome to JU libraray.</h3>
-      <p>The more that you read, the more things you will know. The more that you learn, the more places you’ll go.</p>
-      <a href="about.php" class="white-btn">discover more</a>
-   </div>
-
-</section>
-
-
-<section class="about">
-
-   <div class="flex">
-
-      <div class="image">
-         <img src="images/content-img.png" alt="">
-      </div>
-
-      <div class="content">
-         <h3>about us</h3>
-         <p>Established in 1985 , the JU library is equipped with a huge collection of books. Located behind the monument of “Sangshaptak”, the library is conveniently placed between the main academic buildings and the dormitories. There are more than 110,000 books, 14,000 hardbound journals, 22,000 online journals and 36 on-line journals database in the library. The library can accommodate over 500 students at a time. Airy with ample glass openings, the library is an elegant piece of architecture.</p>
-         <a href="about.php" class="btn">read more</a>
-      </div>
-
-   </div>
-
-</section>
-
-<section class="home-contact">
-
-   <div class="content">
-      <h3>have any questions?</h3>
-      <p>If you have any query then contact with us</p>
-      <a href="contact.php" class="white-btn">contact us</a>
-   </div>
-
-</section>
-
-<?php include 'footer.php'; ?>
-
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-
-</body>
-</html>
