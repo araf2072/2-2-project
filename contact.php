@@ -58,8 +58,7 @@
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
+            Want to get in touch? We'd love to hear from you.Here's how you can reach use.....
           </p>
 
           <div class="info">
