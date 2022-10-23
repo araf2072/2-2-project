@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,13 +29,13 @@
    <div class="flex">
 
       <div class="image">
-         <img src="images/content-img.png" alt="">
+         <img src="images/content-img.jpg" alt="">
       </div>
 
       <div class="content">
          <h3>why us?</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatibus aut hic molestias, reiciendis natus fuga, cumque excepturi veniam ratione iure. Excepturi fugiat placeat iusto facere id officia assumenda temporibus?</p>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quos enim minima ipsa dicta officia corporis ratione saepe sed adipisci?</p>
+         <p>The Library started in 1985 with a collection of — books. Now the elibrary has a huge collection books. This is the first digital library in Jahangirnagar University. The present total measurement of the library is — square feet.since its inception, has been providing library support to students, teachers, researchers and general readers.</p>
+         <p> This library has a huge collection of  books, journal volumes and periodicals. These books and journals cover all areas of knowledge and information and reflect the nature of a general university with equal emphasis on humanities, social sciences, business administration, sciences and applied sciences. The library has also a huge archive of newspapers and other  publications.</p>
          <a href="contact.php" class="btn">contact us</a>
       </div>
 
@@ -49,7 +50,7 @@
    <div class="box-container">
 
       <div class="box">
-         <img src="images/pic-1.png" alt="">
+         <img src="images/pic-1.jpg" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -58,11 +59,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Raihan</h3>
       </div>
 
       <div class="box">
-         <img src="images/pic-2.png" alt="">
+         <img src="images/pic-2.jpg" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -71,11 +72,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Fahim</h3>
       </div>
 
       <div class="box">
-         <img src="images/pic-3.png" alt="">
+         <img src="images/pic-3.jpg" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -84,11 +85,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Safa</h3>
       </div>
 
       <div class="box">
-         <img src="images/pic-4.png" alt="">
+         <img src="images/pic-4.jpg" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -97,11 +98,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Saba</h3>
       </div>
 
       <div class="box">
-         <img src="images/pic-5.png" alt="">
+         <img src="images/pic-5.jpg" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -110,11 +111,11 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Munim</h3>
       </div>
 
       <div class="box">
-         <img src="images/pic-6.png" alt="">
+         <img src="images/pic-6.jpg" alt="">
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad, quo labore fugiat nam accusamus quia. Ducimus repudiandae dolore placeat.</p>
          <div class="stars">
             <i class="fas fa-star"></i>
@@ -123,7 +124,7 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star-half-alt"></i>
          </div>
-         <h3>john deo</h3>
+         <h3>Mohona</h3>
       </div>
 
    </div>
@@ -144,7 +145,7 @@
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <h3>john deo</h3>
+         <h3>Shafiqul Islam</h3>
       </div>
 
       <div class="box">
@@ -155,7 +156,7 @@
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <h3>john deo</h3>
+         <h3>Rehana Islam</h3>
       </div>
 
       <div class="box">
@@ -166,7 +167,7 @@
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <h3>john deo</h3>
+         <h3>Henry Disuza</h3>
       </div>
 
       <div class="box">
@@ -177,7 +178,7 @@
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <h3>john deo</h3>
+         <h3>Aiman Arsel</h3>
       </div>
 
       <div class="box">
@@ -188,7 +189,7 @@
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <h3>john deo</h3>
+         <h3>Humayan </h3>
       </div>
 
       <div class="box">
@@ -199,7 +200,7 @@
             <a href="#" class="fab fa-instagram"></a>
             <a href="#" class="fab fa-linkedin"></a>
          </div>
-         <h3>john deo</h3>
+         <h3>Lili Disuza</h3>
       </div>
 
    </div>
