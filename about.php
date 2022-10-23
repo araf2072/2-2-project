@@ -29,7 +29,7 @@
    <div class="flex">
 
       <div class="image">
-         <img src="images/content-img.jpg" alt="">
+         <img src="images/content-img.png" alt="">
       </div>
 
       <div class="content">
