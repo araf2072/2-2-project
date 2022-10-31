@@ -44,22 +44,6 @@ CREATE TABLE `books` (
 -- Dumping data for table `books`
 --
 
-INSERT INTO `books` (`id`, `book_name`, `book_image`, `book_author`, `book_quantity`, `book_avilable`, `date`, `librian_name`) VALUES
-(29, 'The King of Drugs', '4017book1.jpg', 'Jhon', 10, 10, '2020-07-29 16:41:42', 'ars'),
-(30, 'The Design Hustile', '5615book3.jpg', 'Jhon Doe', 10, 10, '2020-07-29 14:19:44', 'ars'),
-(31, 'Red Planet', '980book5.jpg', 'Jhon Doe', 10, 10, '2020-07-29 14:19:51', 'ars'),
-(32, 'English Grammar', '6654book6.jpg', 'Jhon Doe', 10, 9, '2020-07-30 15:32:48', 'ars'),
-(33, 'Book Title Here', '4910book4.jpg', 'Jhon Doe', 10, 9, '2020-07-30 15:35:29', 'ars'),
-(34, 'Mental English', '563book7.jpg', 'Jhon Doe', 10, 10, '2020-07-28 14:59:17', 'ars'),
-(35, 'Coding Kids', '4788book14.jpg', 'Jhon Doe', 10, 10, '2020-07-30 15:40:01', 'ars'),
-(37, 'Html and CSS', '3923book12.jpg', 'Anisur Rahman Shahin', 10, 10, '2020-07-29 16:41:49', 'ars'),
-(38, 'Codding and Questions', '7415book10.jpg', 'Robert Kin', 10, 10, '2020-07-29 14:19:59', 'ars'),
-(39, 'Happy Secure', '7010book11.jpg', 'Shahriar Manjur', 10, 10, '2020-07-28 14:33:24', 'asik mia'),
-(40, 'Java Developers', '8713book13.gif', 'Ben Rosum', 10, 10, '2020-07-29 14:20:03', 'asik mia'),
-(41, 'Magic Knowledge', '158photo-book-1318702__340.webp', 'Hatim Tai', 20, 20, '2020-07-29 16:18:52', 'ars'),
-(43, '7 Secret of Health ', '6191book18.jpg', 'Martin', 10, 10, '2020-07-30 15:31:03', 'ars'),
-(44, 'Physics', '6755book19.jpg', 'Ishrat shila', 10, 10, '2020-07-31 04:26:37', 'ars'),
-(45, 'Blood Warrior', '6657book20.jpg', 'Henrik Maikel', 10, 8, '2020-07-30 15:40:05', 'ars');
 
 -- --
 
@@ -144,12 +128,7 @@ CREATE TABLE `students` (
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `name`, `username`, `email`, `uid`, `batch`, `pass`, `phone`, `address`, `image`, `status`, `date`, `blood_grp`, `gpa`) VALUES
-(17, 'Anisur Rahman Shahin', 'shahin', 'mdshahinmije96@gmail.com', '2018200000018', 50, '123456', '+8801754100439', 'Cumilla', '463shahin.png', 1, '2020-07-25 17:16:30', 'A+', '3.86'),
-(18, 'Abdullah Jisan', 'jisan', 'jisan@gmail.com', '2018200000014', 50, '123456', '+8801754100439', 'KIsorgonj,Dhaka', '7573jisan.jpg', 1, '2020-07-26 03:47:56', 'B+', '3.45'),
-(19, 'Asik Newaz', 'sabbir', 'sabbir@gmail.com', '2018200000016', 50, '123456', '01994439594', 'mohakhali,dhaka', '4613sabbir.jpg', 1, '2020-07-29 06:16:25', 'A+', '3.65'),
-(20, 'Sabbir Hasan', 'omor', 'omor@gmail.com', '2018200000011', 50, '123456', '01994439594', 'mohakhali,dhaka', '6828omor.jpg', 1, '2020-07-30 15:34:27', '', ''),
-(21, 'Zihad Bin Jahangir', 'zihad', 'zihad@gmail.com', '20182000000015', 50, '123456', '01994439594', 'mohakhali,dhaka', '9173zihad.jpg', 0, '2020-07-30 15:41:10', '', '');
+
 
 --
 -- Indexes for dumped tables
