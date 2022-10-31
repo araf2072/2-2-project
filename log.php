@@ -1,61 +1,46 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<?php
+session_start();
+if(isset($_SESSION['admin_success_id'])){
+    header('location:librarian/index.php');
+}
+if(isset($_SESSION['user_success_id'])){
+    header('location:student/index.php');
+}
+include('include/db.php');
+if(isset($_POST['btn']))
+{
+    $username = $_POST['username'];
+    $password= $_POST['password'];
+    # $password = password_hash($password,PASSWORD_DEFAULT);
+    $sql = "SELECT * FROM `students` WHERE `username` = '$username' AND `pass` = '$password' ";
+    $result = mysqli_query($con,$sql);
+    $row_count = mysqli_num_rows($result);
+    $user_info = mysqli_fetch_assoc($result);
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="asstets/Fonts/css/all.min.css">
+    if($row_count == 1){
+        if($user_info['status'] == 1)
+        {
+        $_SESSION['user_success_id'] = $user_info['id'];
+        header('location:student/index.php');
 
-
-    <title>Ju library</title>
-</head>
-<body>
-
-<div class="header">
-    <div class="container">
-        <div class="main-buttons" >
-        <div class="img-box text-center mb-5 pb-5">
-            <img src="images/logoju.png" alt="" class="img-fluid">
-        </div>
-        <div class="row ">
-            <div class="col-sm-8 offset-sm-2 col-12">
-                <a href="student/login.php" class="btn btn-info btn-block"><i class="fas fa-book-reader mr-2"></i> Student</a>
-                <a href="librarian/login.php" class="btn btn-info btn-block"> <i class="fas fa-book-reader mr-2"></i> Librarian</a>
-                <a href="index.php" class="btn btn-block"> <i class="fas fa-book-reader mr-2"></i>Back to Home</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-</div>
-<style>
-    .header{
-        background-image: url("images/lib.jpg");
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-size: cover;
-        min-height: 100vh;
-
+    }else{
+        $status_not_active = "Status not active! Please contact with librarin";
     }
-    .main-buttons{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        padding: 25px;
-        padding-bottom: 45px;
-        border-radius: 5px;
-        background: rgba(245, 246, 250, 1);
-    }
-</style>
-</body>
-</html>
+}
 
+    $sql = "SELECT * FROM `libraian` WHERE `username` = '$username' AND `password` = '$password' ";
+    $result = mysqli_query($con,$sql);
+    $row_count = mysqli_num_rows($result);
+    $admin_info = mysqli_fetch_assoc($result);
+
+    if($row_count == 1){
+
+        $_SESSION['admin_success_id'] = $admin_info['id'];
+        header('location:librarian/index.php');
+
+    }else{
+        $input_error = "User name or Password doesnt match!!";
+    }
+}
+
+?>
