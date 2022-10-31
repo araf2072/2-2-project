@@ -1,8 +1,3 @@
-<?php
-session_start();
-if(isset($_SESSION['admin_success_id'])){
-    header('location:index.php');
-}
 include('../include/db.php');
 if(isset($_POST['btn']))
 {
@@ -92,14 +87,7 @@ if(isset($_POST['btn']))
                                         <i class="fa fa-key"></i>
                                     </span>
                                 </div>
-                                <!-- 
-<div class="form-group">
-<div class="checkbox-custom checkbox-primary">
-<input type="checkbox" id="remember-me" value="option1" checked>
-<label class="check" for="remember-me">Remember me</label>
-</div>
-</div>
--->
+
                                 <div class="form-group">
                                     <input type="submit" value="Sign in" class= "btn btn-primary btn-block" name="btn">
                                 </div>
