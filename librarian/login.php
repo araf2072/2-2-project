@@ -1,3 +1,4 @@
+<?php
 include('../include/db.php');
 if(isset($_POST['btn']))
 {
